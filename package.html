@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>North Queensland</title>
+ <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css" rel="stylesheet" />
+</head>
+
+<body style = "background-color:floralwhite;">
+
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-md-12"  style = "height:20px;"></div></div>
+		<div class="row">
+<div class="col-md-1 text-left"style="background-color:floralwhite"></div>
+    
+        <div class="col-md-10" style = "background-color:white;border:2px solid black;">
+          <br><br>
+<center><h3><strong>North Queensland pastoral heritage</strong></h3></center>
+<br><br>
+<p>All databases, photographs, documents and maps that are referenced by this application are stored remotely in various cloud services.  This application has the following components </p>
+
+<p id = "records">&nbsp;</p><p><strong><span>Records</span></strong></p><p><span> The project database is stored in PostgreSQL/PostGIS format.</p><p><em><span>Place</span></em><span> and </span><em><span>Sites</span></em><span> are the focal tables  for database queries. Queries are saved as  a new table which can then be made into a map for printing or viewing; or, used  in subsequent GIS queries with any of the other tables in the  database.</span></p><br>
+
+<div id = "editor">
+<p>&nbsp;</p><p><strong><span>Editor</span></strong><p><span>New database records can be created or current ones updated or deleted. For <em><span>Delete</span></em> select the record number (an integer value) of the site to be deleted from the Sites table.</span></p>
+
+<p>The <em><span>Update</span></em> operation allows the edit of site names as new information about already recorded locations is acquired. Name is a string value</span>. The site name to update is selected by the corresponding record number.</p>
+
+<p>The <em><span>Create record</span></em> operation adds a new record to the Sites table.The record number must be a unique integer value that is greater than the maximum ID number value in the current database.  Name, Feature and Station are string values. Latitude and Longitude coordinates are decimal values and are in the EPSG:4326/ WGS 84  coordinate system.</p>
+</div>
+<br><br>
+<div id = "analysis">
+<p><strong><span>GIS</span></strong></p><p><span>Spatial queries can be made with  </span>   <em><span>Select</span></em>, <em><span>Buffer</span></em><span> and </span><em><span>Intersect</span></em><span>  functions. Additional functions can be added on request.  Queries are stored as new tables in the Postgresql database.</span></p>
+
+<p>Select queries can be made of single records from either the Place or Sites tables. Multiple records can be selected on the basis of 'Shire' or 'Station' name criteria for Place and Sites tables respectively. The 'View maps' and 'View records'
+functions (on the menu bar) can help in deciding on specific criteria for a query.</p>
+
+<p><em>Buffer distance</em> measurements are in metres. The <em>Intersect</em> file is usally a 'select query' table which has been buffered to create a search radius for a spatial query or it can be of any other table in the database.</p>
+
+<p><em>Output</em> maps can be created in GeoJSON format and then downloaded to your local desktop from the browser.</p>
+</div>
+<br><br>
+
+<div id = "export">
+<p><strong><span>Project Maps</span></strong></p><p><span>A library of static Leaflet JS (GeoJSON) maps of selected attributes from each of the Postgresql/ Postgis tables.  This library allows the exploration of Places and Sites records and the highlighting of their locations and their respective Shire and Station names as queries are being made.</span></p><p>&nbsp;Road, homestead and cadastrre maps cover the extent of North Queensland northwards from the Flinders Highway (Mt Isa - Townsville). The remaining maps cover a smaller extent over the current study area in the northern Gulf country (-15.00,141.60 to -18.60,145.30).</p></div><br>
+
+<br>
+
+
+</div>
+
+
+</div></div></div></body>
+
+   <footer style= "background-color:black;margin-top: 50px;padding:10px"> 
+   <p style = "text-align:center;font-size:16px;color:white;">j.monaghan@bigpond.com
+      <br>  <small>&copy; Jim Monaghan 2022</small></p></footer>  
+
+
+
+</html>
