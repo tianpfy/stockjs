@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <script src="data/placeList.js"></script>
+   <script src="js/jquery-3.7.1.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/sorttable.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <script>
+// $(function() { $("#myTable").tablesorter()});</script>
+<style>
+      table { border: 1px solid black; border-collapse: collapse; margin: 0 auto;}
+      th {background-color:black; color:white;  padding:10x; text-align:center; text-transform: capitalize;}
+      td, th {padding: 10px;}
+      h3 {margin-top: 5px;text-align:center;margin-bottom: 20px;}
+      body{background-color: whitesmoke;}
+      #home{background-color: black;color:white;margin-bottom:3px;}
+      #feet { background-color:black; margin-top: 50px;padding:10px;}
+#feet p { text-align:center;font-size:16px; color:white;}
+     
+   </style>
+
+   <title>Pastoral heritage</title>
+
+
+</head>
+
+<body>
+
+   <div class = "container-fluid" id = "container">
+  
+
+               <form class ="form-group-md">
+<input type="button" class="btn" value="Home" id = "home" onclick="location.href = 'index.html';">  
+  <input type="button" class="btn" value="Sites table" style = "background-color:black;color:white" onclick="location.href = 'sites.html';">
+      
+      <h3><strong>Places</strong></h3>
+    
+<div class="col-md-12">
+
+    <div class="panel panel-default" style = "border-style:2px solid;">
+
+
+   <script>
+      //function convert() {
+         
+         let jsonData = places;
+         
+         let container = $("#container");     
+         
+         let table = $("<table id = 'myTable' class = 'table table-bordered sortable'>");
+         
+         let tby = $("<tbody>");
+         
+         let cols = Object.keys(jsonData[0]);
+         
+         
+         let thead = $("<thead>");
+         let tr = $("<tr draggable = 'true' dropzone = 'copy'>");
+         // Loop through the column names and create header cells
+         $.each(cols, function(i, item){
+            let th = $("<th>");
+            th.text(item); // Set the column name as the text of the header cell
+            tr.append(th); // Append the header cell to the header row
+         });
+         thead.append(tr); // Append the header row to the header
+         table.append(tr);// Append the header to the table
+         table.append(tby);
+         // Loop through the JSON data and create table rows
+         $.each(jsonData, function(i, item){
+         let tr = $("<tr>");
+            
+            // Get the values of the current object in the JSON data
+            let vals = Object.values(item);
+            
+            // Loop through the values and create table cells
+            $.each(vals, (i, elem) => {
+               let td = $("<td>");
+               td.text(elem); // Set the value as the text of the table cell
+               tr.append(td); // Append the table cell to the table row
+            });
+
+            table.append(tr); // Append the table row to the table
+         });
+      
+         container.append(table); // Append the table to the container element
+     
+
+   </script> 
+
+</div></div>
+</div>
+
+ <footer id = "feet"><p>j.monaghan@bigpond.com <br>  <small>&copy; Jim Monaghan 2022</small></p></footer> 
+  
+ </body> 
+</html>

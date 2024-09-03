@@ -1,0 +1,72 @@
+*{font-family: "Arial", san serif;}
+
+.navbar-brand {  background-color: #FFFAFA;}
+.col-md-1 text-left {background-color:smokewhite}
+.col-md-10 {background-color:smokewhite;
+font-size: larger}
+#list1{font-weight: bolder;
+padding-left:15px;
+ padding-right:15px}
+.col-md-1 {background-color:floralwhite}
+.navbar navbar-inner navbar-fixed-bottom {background-color: #FFFAFA;}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+
+#fb1{background-color:ghostwhite}
+#fb2{background-color: whitesmoke }
+#fb3{background-color: ghostwhite}
+#fb4{background-color: floralwhite}
+#fb5{background-color: white}
+
+#mapin{margin-bottom: 10px}
+
+#title {  background-color:smokewhite}
+#BufInputName{ width: 100%;}
+
+
+#GISInputName{ width: 70%;}
+#stationSel{  padding-bottom: 12px;
+margin-bottom: 30px}
+#featureSel{ padding-bottom: 12px;
+margin-bottom: 30px}
+
+#footer{background-color: #FFFAFA;;
+font-weight: bold}
+
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B4\25BE" 
+}
+
+
+
+/*#words {
+    
+
+    -fx-font-family:"Arial Bold";
+    -fx-font-size: 18px;
+    -fx-color:lightgoldenrodyellow;
+-fx-background-color: #FFFAFA;
+    -fx-border-color: lightyellow;
+    -fx-border-color:	#ffae19;
+    -fx-border-width: 6; 
+}*/
+
+
+#feet {
+background-color:black;
+margin-top: 50px;
+padding:10px;
+}
+
+#feet p {
+text-align:center;
+font-size:16px;
+color:white;
+
+}
+
+
