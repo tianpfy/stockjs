@@ -1,0 +1,1 @@
+var tables = [{"tablename":"conservation"},{"tablename":"dcdb"},{"tablename":"drainage"},{"tablename":"habitation"},{"tablename":"sites"},{"tablename":"homestead"},{"tablename":"names"},{"tablename":"placename"},{"tablename":"road"},{"tablename":"stockr"},{"tablename":"waterholes"},{"tablename":"place"}]

@@ -1,0 +1,31 @@
+var settlement = {
+"type": "FeatureCollection",
+"name": "towns",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "gid": 4, "name": "INNISFAIL", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 146.03102, -17.52209 ] } },
+{ "type": "Feature", "properties": { "gid": 7, "name": "CHARTERS TOWERS", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 146.26354, -20.07671 ] } },
+{ "type": "Feature", "properties": { "gid": 8, "name": "GEORGETOWN", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 143.54584, -18.29199 ] } },
+ {"type": "Feature", "properties": { "gid": 15, "name": "COOKTOWN", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 145.24986, -15.47028 ] } },
+{ "type": "Feature", "properties": { "gid": 17, "name": "KARUMBA", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 140.83819, -17.48882 ] } },
+{ "type": "Feature", "properties": { "gid": 18, "name": "CROYDON", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 142.24459, -18.2043 ] } },
+{"type": "Feature", "properties": { "gid": 32, "name": "KOWANYAMA", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 141.74567, -15.47362 ] } },
+{ "type": "Feature", "properties": { "gid": 35, "name": "PORMPURAAW", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 141.62118, -14.89884 ] } },
+{ "type": "Feature", "properties": { "gid": 46, "name": "CAIRNS", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 145.76625, -16.92304 ] } },
+{ "type": "Feature", "properties": { "gid": 55, "name": "CLONCURRY", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 140.51303, -20.70718 ] } },
+{ "type": "Feature", "properties": { "gid": 57, "name": "INGHAM", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 146.16248, -18.64552 ] } },
+{ "type": "Feature", "properties": { "gid": 59, "name": "GORDONVALE", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 145.78038, -17.09959 ] } },
+{ "type": "Feature", "properties": { "gid": 61, "name": "RAVENSHOE", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 145.48687, -17.61636 ] } },
+{ "type": "Feature", "properties": { "gid": 63, "name": "DIMBULAH", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 145.10969, -17.14752 ] } },
+{ "type": "Feature", "properties": { "gid": 65, "name": "WUJAL WUJAL", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 145.3185, -15.94557 ] } },
+{ "type": "Feature", "properties": { "gid": 66, "name": "TOWNSVILLE", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 146.8057, -19.26639 ] } },
+{ "type": "Feature", "properties": { "gid": 67, "name": "MOUNT GARNET", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 145.1143, -17.67661 ] } },
+{ "type": "Feature", "properties": { "gid": 69, "name": "AYR", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 147.40666, -19.57393 ] } },
+{ "type": "Feature", "properties": { "gid": 73, "name": "MAREEBA", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 145.42324, -16.995 ] } },
+{ "type": "Feature", "properties": { "gid": 76, "name": "ATHERTON", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 145.47522, -17.26864 ] } },
+{ "type": "Feature", "properties": { "gid": 77, "name": "PORT DOUGLAS", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 145.46725, -16.48383 ] } },
+{ "type": "Feature", "properties": { "gid": 78, "name": "HOPE VALE", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 145.11125, -15.29561 ] } },
+{ "type": "Feature", "properties": { "gid": 85, "name": "PENTLAND", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 145.39692, -20.52363 ] } },
+{ "type": "Feature", "properties": { "gid": 88, "name": "NORMANTON", "feature": "Populated Place" }, "geometry": { "type": "Point", "coordinates": [ 141.07721, -17.67183 ] } }
+]
+}

@@ -1,0 +1,35 @@
+
+const path = require('path');
+const fs = require('fs'); 
+const pg = require('pg');
+const { Client, Query } = require('pg')
+
+//exports.allSites = function() {
+
+var username = "postgres" 
+
+
+ var ToJSON = "SELECT json_build_object(\n" + "'type', 'FeatureCollection',\n" + "'features', json_agg(\n" + "json_build_object(\n" + "'type', 'Feature',\n" + "'id',gid,\n" + "'geometry', ST_AsGeoJSON(geometry)::json,\n" + "'properties', jsonb_set(row_to_json(${outtab})::jsonb,'{geometry}','0',false)\n" + ")\n" + ")\n" + ")\n" + "FROM ${outtab} ; ";
+
+
+const makeMap = (request,response) => {
+
+    var client = new Client(conString);
+    client.connect();
+    var query = client.query(new Query(ToJSON));
+    query.on("row", function (row, result) {
+        result.addRow(row);
+    });
+    query.on("end", function (result) {
+   const jsonString = JSON.stringify(result.rows);
+
+    fs.writeFile('public\\js\\mademap.js', 'var homes = ' + jsonString, err => {
+    if (err) {
+        console.log('Error writing file', err)
+    } else {
+        console.log('Successfully wrote file')
+   }})
+}) 
+}
+        
+    

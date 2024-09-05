@@ -1,0 +1,33 @@
+
+*{font-family: "Arial", san serif;}
+
+html, body, #map { 
+	margin: 0; height: 100%; background: #fff; font-size:12px
+}
+
+ #name,  #localgover,  #choice{font-size:12px}
+ #labs{font-size:14px; font-weight: bold; margin-top:20px;}
+
+#records_table {background-color:ghostwhite; border:2px solid grey; font-size:14px; width:100%;margin-left:75px;margin-top:40px;margin-bottom:50px;} 
+#choice {margin-bottom:90px; font-size:14px;}
+#switch {  background-color:black; margin-bottom:50px; font-size:14px; margin-top:30px;}
+#space{font-size: 40px; margin-top:60px;font-weight: bold; }
+#records_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: black;
+  color: white;
+  font-size:16px
+}
+
+
+ #col1,#col2,#col3 { background-color:lightgray; padding-top:30px; margin-bottom:20px; }
+
+#box{ margin-left:80px;margin-top:40px; background-color: lightyellow; margin-bottom: 60px;  padding-top:30 px; }
+
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B4\25BE" 
+}
+
+ 

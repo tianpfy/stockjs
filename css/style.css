@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+
+}
+
+html, body, #map {
+ 
+ height: 100%;
+
+}
+
+.custom-popup .leaflet-popup-tip {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+font-size:10px;
+font-weight:bold;
+  }
+
+.custom .leaflet-popup-tip {"Bullseye"}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:10px;
+  padding-left: 10px;
+}
+
+.btnLeft:active {
+    width: 800px;
+    height: 500px;
+}
+
+#photo {
+background-color:lightblue;
+
+}
+
+#phtext {
+background-color:lightblue;
+font-size:18px;
+font-weight:bold;
+
+}
+
+#piccie{
+width: 480px;
+height: 300px;
+border: 3px #ffae19;
+
+
+}
